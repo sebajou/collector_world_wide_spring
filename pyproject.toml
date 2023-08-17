@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "collector_world_wide_spring"
+version = "0.1.0"
+description = ""
+authors = ["sebajou <sebajou@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.101.1"
+uvicorn = "^0.23.2"
+requests = "^2.31.0"
+
+[tool.poetry.scripts]
+start = "collector_world_wide_spring.main:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
